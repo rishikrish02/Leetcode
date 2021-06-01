@@ -10,10 +10,9 @@ class Solution(object):
         """
         
         start = 0
-        end = n
         mid = 0
-        while start <= end:
-            mid = (start + end)/2           
+        while start <= n:
+            mid = (start + n)/2           
             if(isBadVersion(mid)):
                 end = mid-1
             else:
